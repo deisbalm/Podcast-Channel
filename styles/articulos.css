@@ -1,0 +1,189 @@
+/*INICIO ARTICULO 1*/
+#articulo1 {
+  display: flex;
+  flex-direction: column; }
+  #articulo1 img {
+    z-index: 90;
+    width: 360px;
+    height: 519px;
+    margin-top: -30%; }
+  #articulo1 #de-donde-venimos h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    margin: 27px 16px 8px 16px; }
+  #articulo1 #de-donde-venimos p {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 16px;
+    font-size: 14px; }
+
+/*FIN ARTICULO 1*/
+/*ARTICULO 2*/
+#articulo2 {
+  margin-top: 35px; }
+  #articulo2 h1 {
+    margin: 0px 16px 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px; }
+  #articulo2 .imagenes {
+    display: flex;
+    flex-direction: column; }
+    #articulo2 .imagenes img {
+      width: 100%;
+      height: 70vw;
+      line-height: 0px;
+      padding: 0px; }
+    #articulo2 .imagenes img:hover {
+      opacity: 75%;
+      transition: 300ms all; }
+
+/*FIN ARTICULO 2*/
+/*ARTICULO 3*/
+#articulo3 h1 {
+  margin: 48px 16px 16px 24px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  margin-bottom: 37px; }
+#articulo3 h3 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 65px; }
+#articulo3 .nuestros-temas {
+  display: flex;
+  flex-direction: column; }
+  #articulo3 .nuestros-temas .temas img {
+    display: block;
+    width: 104px;
+    height: 104px;
+    margin-left: auto;
+    margin-right: auto; }
+  #articulo3 .nuestros-temas .temas:hover img {
+    animation: rebote 400ms linear;
+    cursor: pointer; }
+  #articulo3 .nuestros-temas .temas:hover h3 {
+    animation: deslizar 400ms linear;
+    cursor: pointer;
+    color: #00F3BB; }
+@keyframes rebote {
+  0% {
+    transform: translateY(-30%); }
+  25% {
+    transform: translateY(0%); }
+  75% {
+    transform: translateY(-10%); }
+  100% {
+    transform: translateY(0%); } }
+@keyframes deslizar {
+  from {
+    transform: translateX(-100%); }
+  to {
+    transform: translateX(0%); } }
+/*FIN ARTICULO 3*/
+/*ARTICULO 4*/
+#articulo4 {
+  width: 100%;
+  height: 341px;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  text-align: center; }
+  #articulo4 h1 {
+    width: 288px;
+    height: 126px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 64px;
+    margin-bottom: 49px; }
+
+/*FIN ARTICULO 4*/
+/*MEDIA QUERIES*/
+@media screen and (min-width: 700px) {
+  #articulo1 {
+    flex-direction: row; }
+    #articulo1 img {
+      z-index: 1;
+      margin-top: -6%;
+      width: 400px;
+      height: 580px;
+      margin-left: 100px; } }
+@media screen and (min-width: 600px) {
+  #articulo2 .imagenes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 30%; }
+    #articulo2 .imagenes img {
+      height: 40vw; }
+
+  #articulo4 h1 {
+    width: 692px;
+    height: 62px;
+    margin: 0px auto;
+    font-size: 36px; }
+  #articulo4 .btn {
+    margin-top: 50px; } }
+@media screen and (min-width: 1400px) {
+  #articulo1 {
+    flex-direction: row; }
+    #articulo1 img {
+      width: 450px;
+      height: 680px;
+      margin-left: 350px; }
+    #articulo1 #de-donde-venimos {
+      width: 520px;
+      height: 300px;
+      line-height: 24px;
+      padding-top: 50px;
+      margin-left: 150px; }
+      #articulo1 #de-donde-venimos h1 {
+        font-size: 48px;
+        padding-bottom: 24px; }
+      #articulo1 #de-donde-venimos p {
+        font-size: 16px; }
+
+  #articulo2 {
+    padding-top: 2%; }
+    #articulo2 h1 {
+      font-size: 48px;
+      margin-left: 330px; }
+    #articulo2 .imagenes {
+      display: grid;
+      grid-template-columns: 33.3% 33.3% 33.4%;
+      grid-template-rows: 50% 50%;
+      margin-top: 36px; }
+      #articulo2 .imagenes img {
+        height: 25vw; }
+
+  #articulo3 h1 {
+    font-size: 48px;
+    margin-left: 200px; }
+  #articulo3 .nuestros-temas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 8em; }
+  #articulo3 .temas {
+    padding: 2vw;
+    width: 260px;
+    height: 178px;
+    animation: deslizar 400ms linear; }
+
+  @keyframes deslizar {
+    from {
+      transform: translateY(-100%); }
+    to {
+      transform: translateY(0%); } }
+  #articulo4 {
+    height: 518px;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%); }
+    #articulo4 h1 {
+      padding-top: 213px;
+      margin-bottom: 36px; }
+    #articulo4 .btn {
+      width: 345px;
+      height: 56px; } }
+
+/*# sourceMappingURL=articulos.css.map */

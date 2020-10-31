@@ -1,0 +1,50 @@
+/*CONTENEDOR EPISODIOS*/
+#contenedor-episodios {
+  width: 100%;
+  height: 1203.5px;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  clip-path: polygon(0 3%, 100% 0, 100% 98%, 0% 100%);
+  margin-top: 24px;
+  padding-top: 60px; }
+  #contenedor-episodios h1 {
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 16px; }
+  #contenedor-episodios .box {
+    margin: 11px; }
+    #contenedor-episodios .box iframe {
+      width: 100%;
+      height: 232px;
+      border: 0; }
+  #contenedor-episodios .box:hover {
+    transform: scale(1.1);
+    transition: 300ms; }
+
+/*FIN DE EPISODIOS*/
+/*MEDIA QUERIES*/
+@media screen and (min-width: 600px) {
+  #contenedor-episodios {
+    height: 800px; }
+    #contenedor-episodios .iframes {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%; }
+      #contenedor-episodios .iframes .box {
+        justify-self: center;
+        width: 40vw;
+        height: 232px; } }
+@media screen and (min-width: 1200px) {
+  #contenedor-episodios {
+    height: 1042.6px;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%); }
+    #contenedor-episodios h1 {
+      font-size: 48px;
+      margin-top: 100px;
+      margin-left: 200px; }
+    #contenedor-episodios .iframes {
+      padding-top: 2%; }
+      #contenedor-episodios .iframes .box {
+        width: 584px;
+        height: 282px; } }
+
+/*# sourceMappingURL=episodios.css.map */
